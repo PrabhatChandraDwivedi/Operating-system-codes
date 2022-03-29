@@ -1,0 +1,22 @@
+#!/bin/bash
+touch file.txt
+echo file.txt is created
+if [ -r file.txt ];
+then
+echo file is readable
+else
+ echo file is not readable
+fi
+if [ -w file.text ];
+then
+echo file is writable
+else
+echo file not writable
+fi
+if [ -x file.txt ];
+then
+echo file is executable
+else 
+echo file is not executable
+fi
+rm file.txt
